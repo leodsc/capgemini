@@ -19,6 +19,7 @@ public class Exercicio2 {
 	private String[] patterns = {"\\d", "[a-z]", 
 	                             "[A-Z]", "[!@#\\$%\\^\\&*\\(\\)\\-\\+]"};
 	public void iniciar() {
+    System.out.printf("Digite a senha: ");
 		String senha = sc.nextLine();
 		int forca = calcularForca(senha);
 		System.out.println(forca);
@@ -32,11 +33,7 @@ public class Exercicio2 {
 		String[] senhaArray = senha.split("");
 		int totalForca = 0;
 		
-		// se a senha for menor que 6 caracteres, o número a ser adiconado é 6-tamanho da senha
-//		if (senhaArray.length < 6) {
-//			return 6-senha.length();
-//		}
-		
+    // valida cada caracter de forma independente
 		for (String caracter: senhaArray) {
 			validar(caracter);
 		}

@@ -16,6 +16,7 @@ public class Exercicio3 {
 	String[] palavraArray;
 	
 	public int iniciar() {
+    System.out.println("Digite a palavra: ");
 		palavra = sc.nextLine();
 		palavraArray = palavra.split("");
 		gerarSubPalavras();
