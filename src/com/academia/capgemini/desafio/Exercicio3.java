@@ -24,6 +24,7 @@ public class Exercicio3 {
 		acharPares();
 		sc.close();
 
+		System.out.println(totalAnagramas);
 		return totalAnagramas;
 	}
 	
